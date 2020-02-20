@@ -1,5 +1,16 @@
 #include <iostream>
 
+
+class Complex{
+	
+	private:
+	double _real;
+	double _imag;
+
+ void recopy(const double *ptr);
+};
+
+
 /*
  *
  *Below:
