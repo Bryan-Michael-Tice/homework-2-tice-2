@@ -28,9 +28,9 @@ double ImagNumGetter() const;
 
 void print();
 
-void ComplexAdd(double &number1, double &number2);
-void ComplexSub(double &number1,double &number2);
-void ComplexMulti( double &number1, double &number2);
+void ComplexAdd(Complex c1, Complex c2);
+void ComplexSub(Complex c1, Complex c2);
+void ComplexMulti(Complex c1, Complex c2);
 void ComplexDiv(double &nubmber1,double &number2);
 void CompexConj(double &number1, double &number2);
 void ComplexMag(double &number1);
