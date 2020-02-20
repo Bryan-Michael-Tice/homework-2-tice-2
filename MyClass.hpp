@@ -34,6 +34,8 @@ void ComplexMulti( double &number1, double &number2);
 void ComplexDiv(double &nubmber1,double &number2);
 void CompexConj(double &number1, double &number2);
 void ComplexMag(double &number1);
+
+void ComplexPhase(double &number1,&number2);
 /*
  *
  *Below:

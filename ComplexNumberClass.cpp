@@ -33,5 +33,9 @@ void CompexConj(double &number1, double &number2){
 }
 
 void ComplexMag(double &number1){
-	(*double) image=(sqrt((pow(number1,2)));
+	(*double) imag=(sqrt((pow(number1,2)));
+}
+
+void ComplexPhase(double &number1,&number2){
+
 }
