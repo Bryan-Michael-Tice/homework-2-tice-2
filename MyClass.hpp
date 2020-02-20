@@ -11,12 +11,17 @@ class Complex{
 };
 
 Complex();
-Complex(double real, double imag);
+Complex(double real, double imag){
+	_real = real;
+	_imag = imag; 
+}
+	
 Complex(const Complex &number){
 	_real = number._real;
 	_imag = number._imag;
 }
-~Complex();
+~Complex(){
+}
 
 /*
  *
