@@ -23,17 +23,22 @@ Complex(const Complex &number){
 }
 	~Complex(){
 }
-double real() const;
-double imag() const;
+double RealNumGetter() const;
+double ImagNumGetter() const;
 
 void print();
 
-void ComplexAdd(double &number1, double &number2)
-	double result;
-	result =imag(number1) + image(number2);
-	result=(*double) imag;
+void ComplexAdd(double &number1, double &number2){
+
+	(*double) imag=ImagNumberGetter(number1) +
+		ImagNumberGetter(number2);
 	return;
 }
+void ComplexSub(double &number1,double &number2){
+	(*double) imag = ImagNumberGetter(number1)-ImagNumberGetter(number2);
+	return;
+}
+
 /*
  *
  *Below:
