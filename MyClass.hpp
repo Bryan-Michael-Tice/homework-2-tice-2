@@ -32,11 +32,16 @@ void ComplexAdd(double &number1, double &number2){
 
 	(*double) imag=ImagNumberGetter(number1) +
 		ImagNumberGetter(number2);
-	return;
+	
 }
 void ComplexSub(double &number1,double &number2){
 	(*double) imag = ImagNumberGetter(number1)-ImagNumberGetter(number2);
-	return;
+	
+}
+
+void ComplexMulti( double &number1, double &number2){
+	(*double) imag= ImageNumberGetter(number1)*ImageNumberGetter(number2);
+	
 }
 
 /*
