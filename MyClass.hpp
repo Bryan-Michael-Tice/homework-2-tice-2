@@ -27,6 +27,13 @@ double real() const;
 double imag() const;
 
 void print();
+
+void ComplexAdd(double &number1, double &number2)
+	double result;
+	result =imag(number1) + image(number2);
+	result=(*double) imag;
+	return;
+}
 /*
  *
  *Below:
