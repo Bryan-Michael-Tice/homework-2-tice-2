@@ -10,19 +10,23 @@ class Complex{
  void recopy(const double *ptr);
 };
 
+	public:
+	
 Complex();
 Complex(double real, double imag){
 	_real = real;
 	_imag = imag; 
-}
-	
+	}
 Complex(const Complex &number){
 	_real = number._real;
 	_imag = number._imag;
 }
-~Complex(){
+	~Complex(){
 }
+double real() const;
+double imag() const;
 
+void print();
 /*
  *
  *Below:
