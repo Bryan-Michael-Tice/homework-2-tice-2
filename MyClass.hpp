@@ -31,50 +31,10 @@ void print();
 void ComplexAdd(Complex c1, Complex c2);
 void ComplexSub(Complex c1, Complex c2);
 void ComplexMulti(Complex c1, Complex c2);
-void ComplexDiv(double &nubmber1,double &number2);
-void CompexConj(double &number1, double &number2);
-void ComplexMag(double &number1);
+void ComplexDiv(Complex c1, Complex c2);
+void CompexConj(Complex c);
+void ComplexMag(Complex c);
 
-void ComplexPhase(double &number1,&number2);
-/*
- *
- *Below:
- class declaration, constructor declarations and function declaratons..
-
-needs:
-
-these data members,
-
-double real
-double imag
-
-these prototypes,
-
-Default constructor (no args)
-Default constructor (w/args)
-Copy constructor
-A getter function to get the real number
-A getter function to get the imaginary number
-A function to print
-A function to add two complex numbers
-A function to multiply two complex numbers
-A function to divide tow complex numbers
-A function to get the magnitude of a complex number
-A function go get the phase (angle) of a complex nubmer
- 
- 
- and to overload these operators (as prototypes)
- +
- -
- *
- *
- (/) 
-=
-<<
->>
+void ComplexPhase(Complex c);
 
 
-create a make file to compile it for somoothnesss
-
- *
- * /
