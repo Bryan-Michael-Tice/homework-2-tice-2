@@ -32,7 +32,8 @@ void ComplexAdd(double &number1, double &number2);
 void ComplexSub(double &number1,double &number2);
 void ComplexMulti( double &number1, double &number2);
 void ComplexDiv(double &nubmber1,double &number2);
-
+void CompexConj(double &number1, double &number2);
+void ComplexMag(double &number1);
 /*
  *
  *Below:

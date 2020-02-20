@@ -25,3 +25,13 @@ void ComplexMulti( double &number1, double &number2){
 void ComplexDiv(double &nubmber1,double &number2){
 	(*double) imag=ImagNumberGetter(number1)/ImagNumberGetter(number2);
 }
+
+
+void CompexConj(double &number1, double &number2){
+	(*double) imag=ImageNumberGetter(number1)*(-1)
+
+}
+
+void ComplexMag(double &number1){
+	(*double) image=(sqrt((pow(number1,2)));
+}
