@@ -54,7 +54,7 @@ double Complex::phase(const Complex c){
 	double phase= atan(c.imag/c.real)
 	phase = phase (180/M_PI);
 	return (phase<0) ? -ph : ph;
-
+}
 Complex operator+(Complex val){
 	Complex temp;
 	temp._real = _real + val.real;
