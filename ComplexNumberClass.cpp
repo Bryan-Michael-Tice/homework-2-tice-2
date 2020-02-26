@@ -10,6 +10,15 @@
  *
  */
 
+Complex::Complex(){
+	_real = new double;
+	_imag = new double;
+}
+
+Complex::Complex(double real, double imag){
+	_real = new double;
+	_imag = new double;
+}
 Complex Complex::add(double &number1, double &number2){
 	Complex c = {c1.real+c2.real, c1.imag+c2.imag};
 	return c;
