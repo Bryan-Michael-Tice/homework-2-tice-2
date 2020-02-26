@@ -20,8 +20,8 @@ class Complex{
 		double ImagNumGetter() const;
 		
 		void print();
-		void add(Complex c1, Complex c2);
-		void sub(Complex c1, Complex c2);
+		Complex add(Complex c1);
+		Complex sub(Complex  c2);
 		void mult(Complex c1, Complex c2);
 		void div(Complex c1, Complex c2);
 		void conj(Complex c);
