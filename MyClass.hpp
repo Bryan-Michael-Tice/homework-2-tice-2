@@ -20,11 +20,11 @@ class Complex{
 		double ImagNumGetter() const;
 		
 		void print();
-		Complex add(Complex c1);
-		Complex sub(Complex  c2);
-		void mult(Complex c1, Complex c2);
-		void div(Complex c1, Complex c2);
-		void conj(Complex c);
+		Complex add(Complex);
+		Complex sub(Complex);
+		Complex mult(Complex);
+		Complex  div(Complex);
+	//	void conj(Complex c);
 		void magnitude(Complex c);
 		void phase(Complex c);
 
