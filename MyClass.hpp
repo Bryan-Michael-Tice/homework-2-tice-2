@@ -13,7 +13,7 @@ class Complex{
 	public:
 		Complex();
 		Complex(double real, double imag);
-		Complex(const Complex double);
+		Complex(const double);
 		~Complex();
 		
 		double RealNumGetter() const;
