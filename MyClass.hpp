@@ -21,13 +21,13 @@ class Complex{
 		
 		void print();
 		
-		void ComplexAdd(Complex c1, Complex c2);
-		void ComplexSub(Complex c1, Complex c2);
-		void ComplexMulti(Complex c1, Complex c2);
-		void ComplexDiv(Complex c1, Complex c2);
-		void CompexConj(Complex c);
-		void ComplexMag(Complex c);
-		void ComplexPhase(Complex c);
+		void add(Complex c1, Complex c2);
+		void sub(Complex c1, Complex c2);
+		void mult(Complex c1, Complex c2);
+		void div(Complex c1, Complex c2);
+		void conj(Complex c);
+		void magnitude(Complex c);
+		void phase(Complex c);
 
  friend std::ostream &operator<<(std::iostream & out, Complex &complex_int);
  
