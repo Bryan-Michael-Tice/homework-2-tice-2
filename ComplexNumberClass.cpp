@@ -55,6 +55,55 @@ double Complex::phase(const Complex c){
 	phase = phase (180/M_PI);
 	return (phase<0) ? -ph : ph;
 
+Point operator+(Point point){
+	Point temp;
+	temp._real = _real + point.real;
+	temp._imag = _imag + point.imag;
+
+	return temp;
+}
+
+Point operator-(Point point){
+	Point temp;
+	temp._real = _real - point.real;
+	temp._imag = _imag - point.imag;
+
+	return temp;
+}
+
+Point operator*(Point point) {
+	Point temp;
+	temp._real = _real * point.real;
+	temp._imag = _imag * point.imag;
+
+	return temp;
+}
+
+Point operator/(Point point){
+	Point temp
+	temp._real = _real / point.real;
+	temp._imag = _imag / point.imag;
+	
+	return temp;
+}
+
+Point operator=(Point point){
+	
+	_real =  point.real;
+	_imag =  point.imag;
+
+	return *this;
+}
+
+bool operator!=(Point point){
+	return((_real!=point.real)&&(_image!=point._real));
+}
+
+
+bool operator==(Point point){
+	return((_real==point.real)&&(_image==point._real));
+}
+
 
 
 
