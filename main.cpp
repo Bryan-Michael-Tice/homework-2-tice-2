@@ -1,4 +1,5 @@
 #include <iostream>
+#include "MyClass.hpp"
 
 int main() {
 	Complex c1;

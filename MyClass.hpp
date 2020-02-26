@@ -7,7 +7,7 @@ class Complex{
 	double _real;
 	double _imag;
        
-	void reccopy(const double *ptr);
+//	void reccopy(const double *ptr);
 
 
 	public:
