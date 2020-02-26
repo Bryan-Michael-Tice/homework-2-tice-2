@@ -14,7 +14,7 @@ Complex ComplexAdd(double &number1, double &number2){
 	Complex c = {c1.real+c2.real, c1.imag+c2.imag};
 	return c;
 }
-
+typedef struct ComplexAdd Complex;
 Complex ComplexSub(Complex c1, Complex c2){
 	Complex c = {c1.real-c2.real, c1.imag-c2.imag};
 	return c;
@@ -23,6 +23,7 @@ Complex ComplexMulti(Complex c1, Complex c2){
 	Complex c = {(c1.real*c2.real)+(c1.imag*c2.imag*-1),(c1.imag*imag*c2.real)+(c1.real*c2.imag)};
 	return c;
 }
+
 
 Complex ComplexDiv(Complex c1, Complex c2){
 	double denominator = ComplexMulti(c2)*ComplexMulti(c2);
