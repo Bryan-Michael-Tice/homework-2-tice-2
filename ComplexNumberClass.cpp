@@ -9,17 +9,32 @@
  *
  *
  */
-
 Complex::Complex(){
-	_real = new double;
-	_imag = new double;
-}
+		_real=0;
+		_imag=0;
+		}
+
 
 Complex::Complex(double real, double imag){
-	_real = new double;
-	_imag = new double;
+		_real = real;
+		_imag = imag;
+	}
+	
+Complex::Complex(double real, double imag){
+		_real = value.real:
+		_image = value.imag;
+	}	
+
+Complex::~Complex(const Complex &value){
+	}
+
+double Complex::real() const{
+	return _real;
 }
 
+
+double Complex::imag() const{
+	return _imag;
 
 Complex Complex::conj(Complex c){
 	if(*c.imag<0){
@@ -40,4 +55,11 @@ double Complex::phase(const Complex c){
 	phase = phase (180/M_PI);
 	return (phase<0) ? -ph : ph;
 
-}
+
+
+
+
+
+
+
+
