@@ -20,7 +20,6 @@ class Complex{
 		double ImagNumGetter() const;
 		
 		void print();
-		
 		void add(Complex c1, Complex c2);
 		void sub(Complex c1, Complex c2);
 		void mult(Complex c1, Complex c2);
@@ -28,6 +27,12 @@ class Complex{
 		void conj(Complex c);
 		void magnitude(Complex c);
 		void phase(Complex c);
+
+		Complex operator+(Complex);
+		Complex operator-(Complex);		
+		Complex operator*(Complex);
+		Complex operator/(Complex);
+		Complex operator=(Complex);
 
  friend std::ostream &operator<<(std::iostream & out, Complex &complex_int);
  
