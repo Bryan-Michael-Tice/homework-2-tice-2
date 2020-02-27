@@ -14,7 +14,7 @@ class Complex{
 		Complex();
 		Complex(double real);
 		Complex(double real, double imag);
-		Complex(const double);
+		Complex(const Complex);
 		~Complex();
 		
 		double RealNumGetter() const;
