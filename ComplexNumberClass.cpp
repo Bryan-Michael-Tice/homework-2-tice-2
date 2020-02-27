@@ -8,7 +8,10 @@ Complex::Complex(){
 		_imag=0;
 		}
 
-
+Complex::Complex(double real){
+	_real =  real;
+	_imag = 0
+}
 Complex::Complex(double real, double imag){
 		_real = real;
 		_imag = imag;
