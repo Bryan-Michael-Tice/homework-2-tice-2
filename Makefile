@@ -3,7 +3,7 @@ all:main.o ComplexNumberClass.o
 main.o: main.cpp MyClass.hpp
 	g++ -c main.cpp
 ComplexNumberClass.o: ComplexNumberClass.cpp MyClass.hpp
-	g++ -c Complexnumberclass.cpp
+	g++ -c ComplexnumberClass.cpp
 clean:
 	rm *.o
 	rm Test_Now
