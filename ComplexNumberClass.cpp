@@ -87,7 +87,7 @@ Complex Complex::operator=(Complex C1){
 	return *this;
 }
 
-bool operator!=(Complex val){
+/* bool operator!=(Complex val){
 	return((_real!=val.real)&&(_image!=val._real));
 }
 
@@ -104,7 +104,7 @@ std::ostream &operator<<(std::ostream &out,Complex &c1){
 		out<<c1.real()<<"+"<<c1.imag()<<"i";
 	}
 	return out;
-}
+} */
 std::istream &operator>>(std::istream &in,Complex &Data){
 	in>>Data._real>>Data.imag;
 	return in;
