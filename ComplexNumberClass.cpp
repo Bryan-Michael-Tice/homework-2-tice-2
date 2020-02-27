@@ -8,7 +8,7 @@ Complex::Complex(){
 		_imag=0;
 		}
 
-Complex::Complex(double &real){
+Complex::Complex(double real){
 	_real=real;
 	_imag=0;
 }
@@ -16,9 +16,16 @@ Complex::Complex(double real, double imag){
 		_real = real;
 		_imag = imag;
 	}	
-
+Complex::Complex(const Complex &value){
+	_real=value._real;
+	_imag=value._imag;
+}
 Complex::~Complex(){
 	}
+void Complex::print(){
+	std::cout<<Complex()<<std::endl;
+}
+
 /*
 double Complex::real() const{
 	return _real;
@@ -38,6 +45,28 @@ Complex Complex::conj(Complex c){
 	}
 }
 */
+
+Complex Complex::add(Complex value){
+	Complex temp;
+	temp._real = _real +value._real;
+	temp._imag = _imag +value._imag;
+}
+Complex Complex::sub(Complex value){
+	Complex temp;
+	temp._real = _real -value._real;
+	temp._imag = _imag -value._imag;
+}
+Complex Complex::mult(Complex value){
+	Complex temp;
+	temp._real = _real *value._real;
+	temp._imag = _imag *value._imag;
+}
+Complex Complex::div(Complex value){
+	Complex temp;
+	temp._real = _real /value._real;
+	temp._imag = _imag /value._imag;
+}
+
 double Complex::magnitude(){
 	return sqrt((_real*_real)+(_imag*_imag));
 }
