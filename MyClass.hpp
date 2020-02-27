@@ -29,11 +29,11 @@ class Complex{
 		double magnitude();
 		double phase();
 
-		Complex operator+(Complex);
-		Complex operator-(Complex);		
-		Complex operator*(Complex);
-		Complex operator/(Complex);
-		Complex operator=(Complex);
+		Complex operator+(Complex&);
+		Complex operator-(Complex&);		
+		Complex operator*(Complex&);
+		Complex operator/(Complex&);
+		Complex operator=(Complex&);
 
  friend std::ostream& operator<<(std::ostream &out, const Complex &C1);
  
