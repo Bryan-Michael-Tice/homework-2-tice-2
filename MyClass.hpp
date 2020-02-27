@@ -35,9 +35,9 @@ class Complex{
 		Complex operator/(Complex);
 		Complex operator=(Complex);
 
- friend std::ostream& operator<<(std::ostream &out, const Complex);
+ friend std::ostream& operator<<(std::ostream &out, const Complex &C1);
  
- friend std::istream& operator>>(std::istream &in, Complex );
+ friend std::istream& operator>>(std::istream &in, Complex &C1);
  };
 
 
