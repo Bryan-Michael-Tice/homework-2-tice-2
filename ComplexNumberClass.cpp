@@ -13,8 +13,8 @@ Complex::Complex(double real){
 	_imag = 0;
 }
 Complex::Complex(double real, double imag){
-		_real = value.real:
-		_image = value.imag;
+		_real = real;
+		_imag = imag;
 	}	
 
 Complex::~Complex(const Complex &value){
