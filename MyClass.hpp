@@ -12,7 +12,7 @@ class Complex{
 
 	public:
 		Complex();
-		Complex(double real);
+		Complex(double &real);
 		Complex(double real, double imag);
 		Complex(const Complex &value);
 		~Complex();
