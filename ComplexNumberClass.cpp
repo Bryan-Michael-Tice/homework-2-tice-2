@@ -19,7 +19,7 @@ Complex::Complex(double real, double imag){
 
 Complex::~Complex(){
 	}
-
+/*
 double Complex::real() const{
 	return _real;
 }
@@ -37,7 +37,7 @@ Complex Complex::conj(Complex c){
 		std::cout<<endl;
 	}
 }
-
+*/
 double Complex::magnitude(const Complex c){
 	return sqrt((c.real*c.real)+(c.imag*c.imag));
 }
