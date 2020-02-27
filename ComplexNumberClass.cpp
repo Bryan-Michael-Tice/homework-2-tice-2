@@ -94,19 +94,19 @@ Complex Complex::operator=(Complex C1){
 
 bool operator==(Complex val){
 	return((_real==val.real)&&(_image==val._real));
-}
-std::ostream &operator<<(std::ostream &out,Complex &c1){
-	if(c1.imag()<0){
-		double temp =-1 * c1.imag();
-		out<<c1.real()<< "  -  " <<temp<<"i";
+}*/
+std::ostream &operator<<(std::ostream &out,const Complex &c1){
+	if(c1._imag<0){
+		double temp =-1 * c1._imag;
+		out<<c1._real<< "  -  " <<temp<<"i";
 	}
 	else{
-		out<<c1.real()<<"+"<<c1.imag()<<"i";
+		out<<c1._real<<"+"<<c1._imag<<"i";
 	}
 	return out;
-} */
+} 
 std::istream &operator>>(std::istream &in,Complex &Data){
-	in>>Data._real>>Data.imag;
+	in>>Data._real>>Data._imag;
 	return in;
 }
 
