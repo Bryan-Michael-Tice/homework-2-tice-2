@@ -2,13 +2,7 @@
 #include <math.h>
 #include "MyClass.hpp"
 
-/* 
- * Place constructors and functions below
- *
- * /
- *
- *
- */
+
 Complex::Complex(){
 		_real=0;
 		_imag=0;
@@ -46,7 +40,7 @@ Complex Complex::conj(Complex c){
 	}
 }
 
-double Complex::mag(const Complex c){
+double Complex::magnitude(const Complex c){
 	return sqrt((c.real*c.real)+(c.imag*c.imag));
 }
 
@@ -55,7 +49,7 @@ double Complex::phase(const Complex c){
 	phase = phase (180/M_PI);
 	return (phase<0) ? -ph : ph;
 }
-Complex operator+(Complex val){
+Complex Complex::operator+(Complex val){
 	Complex temp;
 	temp._real = _real + val.real;
 	temp._imag = _imag + val.imag;
@@ -63,7 +57,7 @@ Complex operator+(Complex val){
 	return temp;
 }
 
-Complex operator-(Complex val){
+Complex Complex::operator-(Complex val){
 	Complex temp;
 	temp._real = _real - val.real;
 	temp._imag = _imag - val.imag;
@@ -71,7 +65,7 @@ Complex operator-(Complex val){
 	return temp;
 }
 
-Complex operator*(Complex val) {
+Complex Complex::operator*(Complex val) {
 	Complex temp;
 	temp._real = _real * val.real;
 	temp._imag = _imag * val.imag;
@@ -79,7 +73,7 @@ Complex operator*(Complex val) {
 	return temp;
 }
 
-Complex operator/(Complex val){
+Complex Complex::operator/(Complex val){
 	Complex temp
 	temp._real = _real / val.real;
 	temp._imag = _imag / val.imag;
@@ -87,7 +81,7 @@ Complex operator/(Complex val){
 	return temp;
 }
 
-Complex operator=(Complex val){
+Complex Complex::operator=(Complex val){
 	
 	_real =  val.real;
 	_imag =  val.imag;
@@ -103,8 +97,20 @@ bool operator!=(Complex val){
 bool operator==(Complex val){
 	return((_real==val.real)&&(_image==val._real));
 }
-
-
+std::ostream &operator<<(std::ostream &out,Complex &c1){
+	if(c1.imag()<0){
+		double temp =-1 * c1.imag();
+		out<<c1.real()<< "  -  " <<temp<<"i";
+	}
+	else{
+		out<<c1.real()<<"+"<<c1.imag()<<"i";
+	}
+	return out;
+}
+std::istream &operator>>(std::istream &in,Complex &Data){
+	in>>Data._real>>Data.imag;
+	return in;
+}
 
 
 
