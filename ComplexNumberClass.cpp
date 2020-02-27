@@ -17,7 +17,7 @@ Complex::Complex(double real, double imag){
 		_imag = imag;
 	}	
 
-Complex::~Complex(const Complex &value){
+Complex::~Complex(){
 	}
 
 double Complex::real() const{
