@@ -8,9 +8,9 @@ Complex::Complex(){
 		_imag=0;
 		}
 
-Complex::Complex(double real){
-	_real =  real;
-	_imag = 0;
+Complex::Complex(double &real){
+	_real=real;
+	_imag=0;
 }
 Complex::Complex(double real, double imag){
 		_real = real;
@@ -46,18 +46,18 @@ double Complex::phase(){
 	double My_Phase= atan(_imag/_real)*(180/M_PI);
         return My_Phase;
 }
-Complex Complex::operator+(Complex){
+Complex Complex::operator+(Complex value){
 	Complex temp;
-	temp._real = _real + _real;
-	temp._imag = _imag + _imag;
+	temp._real = _real +value._real;
+	temp._imag = _imag +value._imag;
 
 	return temp;
 }
 
-Complex Complex::operator-(Complex){
+Complex Complex::operator-(Complex value){
 	Complex temp;
-	temp._real = _real - _real;
-	temp._imag = _imag - _imag;
+	temp._real = _real - value._real;
+	temp._imag = _imag - value._imag;
 
 	return temp;
 }
@@ -79,10 +79,10 @@ Complex Complex::operator/(Complex C1){
 	return temp;
 }
 
-Complex Complex::operator=(Complex C1){
+Complex Complex::operator=(Complex value){
 	
-	_real = C1. _real;
-	_imag = C1. _imag;
+	_real = value._real;
+	_imag = value._imag;
 
 	return *this;
 }
