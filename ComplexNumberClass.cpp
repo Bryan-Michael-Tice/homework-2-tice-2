@@ -38,51 +38,51 @@ Complex Complex::conj(Complex c){
 	}
 }
 */
-double Complex::magnitude(const Complex c){
-	return sqrt((c.real*c.real)+(c.imag*c.imag));
+double Complex::magnitude(){
+	return sqrt((_real*_real)+(_imag*_imag));
 }
 
-double Complex::phase(const Complex c){
-	double phase= atan(c.imag/c.real)
-	phase = phase (180/M_PI);
-	return (phase<0) ? -ph : ph;
+double Complex::phase(){
+	double My_Phase= atan(_imag/_real)*(180/M_PI);
+        return My_Phase;
 }
-Complex Complex::operator+(Complex val){
+Complex Complex::operator+(Complex){
 	Complex temp;
-	temp._real = _real + val.real;
-	temp._imag = _imag + val.imag;
+	temp._real = _real + _real;
+	temp._imag = _imag + _imag;
 
 	return temp;
 }
 
-Complex Complex::operator-(Complex val){
+Complex Complex::operator-(Complex){
 	Complex temp;
-	temp._real = _real - val.real;
-	temp._imag = _imag - val.imag;
+	temp._real = _real - _real;
+	temp._imag = _imag - _imag;
 
 	return temp;
 }
 
-Complex Complex::operator*(Complex val) {
+Complex Complex::operator*(Complex C1) {
 	Complex temp;
-	temp._real = _real * val.real;
-	temp._imag = _imag * val.imag;
+	temp._real = _real * C1._real;
+	temp._imag = _imag * C1._imag;
 
 	return temp;
 }
 
-Complex Complex::operator/(Complex val){
-	Complex temp
-	temp._real = _real / val.real;
-	temp._imag = _imag / val.imag;
+Complex Complex::operator/(Complex C1){
+	
+	Complex temp;
+	temp._real = _real / C1._real;
+	temp._imag = _imag / C1._imag;
 	
 	return temp;
 }
 
-Complex Complex::operator=(Complex val){
+Complex Complex::operator=(Complex C1){
 	
-	_real =  val.real;
-	_imag =  val.imag;
+	_real = C1. _real;
+	_imag = C1. _imag;
 
 	return *this;
 }
