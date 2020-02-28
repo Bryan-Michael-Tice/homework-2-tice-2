@@ -23,7 +23,14 @@ Complex::Complex(const Complex &value){
 Complex::~Complex(){
 	}
 void Complex::print(){
-	std::cout<<_real<<" + "<<_imag<<"i"<<std::endl;
+	if(_imag<0){
+		std::cout<< " " <<_real<<" - " << -_imag;
+		std::cout<<std::endl;
+	}
+	else {	
+		std::cout<< " " <<_real<<" + " << -_imag;
+		std::cout<<std::endl;
+	}
 }
 
 
@@ -35,15 +42,11 @@ double Complex::RealNumGetter()const{
 double Complex::ImagNumGetter()const{
 	return _imag;
 }
-void Complex::conj(Complex c){
-	if(c._imag<0){
-		std::cout<< " " <<c._real<<"  " << -c._imag;
-		std::cout<<std::endl;
-	}
-	else {	
-		std::cout<< " " <<c._real<<"  " << -c._imag;
-		std::cout<<std::endl;
-	}
+Complex Complex::conj(){
+	Complex temp;
+	temp._real = _real;
+	temp._imag = -1 * _imag;
+	return temp;
 }
 
 
@@ -66,9 +69,10 @@ Complex Complex::mult(Complex value){
 	return temp;
 }
 Complex Complex::div(Complex value){
-	Complex temp(mult(value));
-	temp._real /=((pow(value._real,2)+pow(value._imag,2)));
-	temp._imag /=((pow(value._real,2)+pow(value._imag,2)));
+	Complex temp(mult(value.conj()));
+	double divisor = pow(value.magnitude(), 2);
+	temp._real /= divisor;
+	temp._imag /= divisor;
 
 	return temp;
 }
