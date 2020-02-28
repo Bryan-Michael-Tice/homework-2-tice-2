@@ -26,7 +26,7 @@ void Complex::print(){
 	std::cout<<_real<<" + "<<_imag<<"i"<<std::endl;
 }
 
-/*
+
 double Complex::real() const{
 	return _real;
 }
@@ -44,7 +44,7 @@ Complex Complex::conj(Complex c){
 		std::cout<<endl;
 	}
 }
-*/
+
 
 Complex Complex::add(Complex value){
 	Complex temp;
