@@ -27,7 +27,7 @@ void Complex::print(){
 }
 
 
-double RealNumGetter()const{
+double RealNumGetter(){
 	return _real;
 }
 
