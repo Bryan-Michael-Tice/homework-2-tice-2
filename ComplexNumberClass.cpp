@@ -62,13 +62,14 @@ Complex Complex::sub(Complex value){
 Complex Complex::mult(Complex value){
 	Complex temp;
 	temp._real = (_real *value._real)-(_imag*value._imag);
-	temp._imag = (_imag *value._imag)+(_imag*value._real);
+	temp._imag = (_real *value._imag)+(_imag*value._real);
 	return temp;
 }
 Complex Complex::div(Complex value){
-	Complex temp;
-	temp._real = _real /value._real;
-	temp._imag = _imag /value._imag;
+	Complex temp(mult(value));
+	temp._real /=((pow(value._real,2)+pow(value._imag,2)));
+	temp._imag /=((pow(value._real,2)+pow(value._imag,2)));
+
 	return temp;
 }
 
