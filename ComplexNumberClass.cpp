@@ -35,12 +35,12 @@ double Complex::RealNumGetter()const{
 double Complex::ImagNumGetter()const{
 	return _imag;
 }
-Complex Complex::conj(Complex c){
-	if(*c.imag<0){
-		std::cout<< " " <<c.real<<"  " << -c.imag;
+void Complex::conj(Complex c){
+	if(*c._imag<0){
+		std::cout<< " " <<c._real<<"  " << -c._imag;
 		std::cout<<endl;
 	else {	
-		std::cout<< " " <<c.real<<"  " << -c.imag;
+		std::cout<< " " <<c._real<<"  " << -c._imag;
 		std::cout<<endl;
 	}
 }
