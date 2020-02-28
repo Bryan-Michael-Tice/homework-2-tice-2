@@ -27,14 +27,14 @@ void Complex::print(){
 }
 
 
-double RealNumGetter(){
+double Complex::RealNumGetter()const{
 	return _real;
 }
 
 
-double Complex::ImagNumGetter(){
+double Complex::ImagNumGetter()const{
 	return _imag;
-
+}
 Complex Complex::conj(Complex c){
 	if(*c.imag<0){
 		std::cout<< " " <<c.real<<"  " << -c.imag;
