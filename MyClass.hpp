@@ -25,9 +25,10 @@ class Complex{
 		Complex sub(Complex);
 		Complex mult(Complex);
 		Complex  div(Complex);
-	//	void conj(Complex c);
+		void conj(Complex c);
 		double magnitude();
 		double phase();
+	
 
 		Complex operator+(Complex value);
 		Complex operator-(Complex value);		

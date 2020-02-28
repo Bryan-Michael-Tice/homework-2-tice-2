@@ -27,12 +27,12 @@ void Complex::print(){
 }
 
 
-double Complex::real() const{
+double RealNumGetter()const{
 	return _real;
 }
 
 
-double Complex::imag() const{
+double Complex::ImagNumGetter(){
 	return _imag;
 
 Complex Complex::conj(Complex c){
