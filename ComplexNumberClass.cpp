@@ -36,12 +36,13 @@ double Complex::ImagNumGetter()const{
 	return _imag;
 }
 void Complex::conj(Complex c){
-	if(*c._imag<0){
+	if(c._imag<0){
 		std::cout<< " " <<c._real<<"  " << -c._imag;
-		std::cout<<endl;
+		std::cout<<std::endl;
+	}
 	else {	
 		std::cout<< " " <<c._real<<"  " << -c._imag;
-		std::cout<<endl;
+		std::cout<<std::endl;
 	}
 }
 
