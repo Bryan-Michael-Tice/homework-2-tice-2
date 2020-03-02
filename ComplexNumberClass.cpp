@@ -26,11 +26,11 @@ Complex::~Complex() {
 
 void Complex::print() {
     if(_imag<0) {
-	std::cout<< " " <<_real<<" - " << -_imag;
+	std::cout<< " " <<_real<<" - " << -_imag<<"j";
 	std::cout<<std::endl;
     }
     else {
-	std::cout<< " " <<_real<<" + " << -_imag;
+	std::cout<< " " <<_real<<" + " << -_imag<<"j";
 	std::cout<<std::endl;
     }
 }
