@@ -1,16 +1,11 @@
+//MyClass.hpp
 #include <iostream>
 
-
 class Complex{
-	
-	private:
-	double _real;
+    private:
+ 	double _real;
 	double _imag;
-       
-//	void reccopy(const double *ptr);
-
-
-	public:
+    public:
 		Complex();
 		Complex(double real);
 		Complex(double real, double imag);
@@ -25,7 +20,7 @@ class Complex{
 		Complex sub(Complex);
 		Complex mult(Complex);
 		Complex  div(Complex);
-		void conj(Complex c);
+		Complex conj();
 		double magnitude();
 		double phase();
 	
